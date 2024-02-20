@@ -8,21 +8,21 @@ export const Background = (playStatus, heroCount) => {
   console.log(playStatus['playStatus']);
   if (playStatus['playStatus'] === true) {
     return (
-      <video className='background' autoPlay loop muted>
+      <video className='background fade-in' autoPlay loop muted>
         <source src={video1} type='video/mp4' />
       </video>
     )
   }
   else if (playStatus['heroCount'] === 0) {
-    return <img src={image1} className='background' alt='' />
+    return <img src={image1} className='background fade-in' alt='' />
   }
 
   else if (playStatus['heroCount'] === 1) {
-    return <img src={image2} className='background' alt='' />
+    return <img src={image2} className='background fade-in' alt='' />
   }
 
   else if (playStatus['heroCount'] === 2) {
-    return <img src={image3} className='background' alt='' />
+    return <img src={image3} className='background fade-in' alt='' />
   }
 }
 
